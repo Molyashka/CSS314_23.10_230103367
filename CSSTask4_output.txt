@@ -1,0 +1,13 @@
+java CSSTask4    
+=== Strategy A: Static chunks ===
+Total time: 248.163 ms
+First thread finished: 238.078 ms | Last thread finished: 248.149 ms
+Completion delta (max - min): 10.072 ms
+=== Strategy B: Dynamic scheduling (chunk=1) ===
+Total time: 247.490 ms
+First thread finished: 243.383 ms | Last thread finished: 244.884 ms
+Completion delta (max - min): 1.501 ms
+=== Strategy B: Dynamic scheduling (chunk=5) ===
+Total time: 241.921 ms
+First thread finished: 233.744 ms | Last thread finished: 241.884 ms
+Completion delta (max - min): 8.140 ms
