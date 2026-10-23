@@ -1,0 +1,8 @@
+java CSSTask8
+Matrix size: 1024x1024
+Threads: 8
+Non-tiled : 780.455 ms
+Tiled 16x16: 210.499 ms
+Tiled 64x64: 168.111 ms
+Speedup tiled 16 vs non-tiled: 3.71x
+Speedup tiled 64 vs non-tiled: 4.64x
