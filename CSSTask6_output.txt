@@ -1,0 +1,11 @@
+java CSSTask6
+=== Unsynchronized ===
+Expected final value: 8000000
+Actual final value:   3496372
+Updates lost: 56.2954%
+Time: 10.271 ms
+=== Atomic (AtomicInteger) ===
+Expected final value: 8000000
+Actual final value:   8000000
+Time: 100.024 ms
+Wall-clock penalty from synchronization: 89.753 ms (9.74x slower)
