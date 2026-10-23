@@ -1,0 +1,13 @@
+(base) moldirseitbak@MacBook-Air-Moldir-2 ~ % javac CSSTask2.java
+(base) moldirseitbak@MacBook-Air-Moldir-2 ~ % java CSSTask2
+Student ID: 12345678
+Logical cores: 8
+-------------------------------------------------------
+Cores    | Wall Time    | Speedup   | Amdahl Upper Bound
+-------------------------------------------------------
+1        |    25.339 ms |     1.00x |              1.00x
+2        |    12.845 ms |     1.97x |              1.90x
+4        |     6.579 ms |     3.85x |              3.48x
+8        |     4.644 ms |     5.46x |              5.93x
+16       |     6.352 ms |     3.99x |              9.14x
+-------------------------------------------------------

@@ -1,0 +1,8 @@
+(base) moldirseitbak@MacBook-Air-Moldir-2 ~ % javac CSSTask3.java
+(base) moldirseitbak@MacBook-Air-Moldir-2 ~ % java CSSTask3
+Logical cores: 8 | Threads used (physical): 4
+Unpadded Shared : 8.718 ms
+Padded (128B)   : 4.511 ms
+Local variable  : 5.443 ms
+Ratio Unpadded/Padded: 1.93x
+Ratio Unpadded/Local : 1.60x

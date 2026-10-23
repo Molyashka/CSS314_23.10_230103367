@@ -1,0 +1,9 @@
+(base) moldirseitbak@MacBook-Air-Moldir-2 ~ % javac CSSTask1.java
+(base) moldirseitbak@MacBook-Air-Moldir-2 ~ % java CSSTask1
+Student ID: 230103367
+OS: Mac OS X 14.6 (aarch64)
+CPU/Platform: aarch64, Java 23, OpenJDK 64-Bit Server VM
+Logical cores: 8
+Sum: 1.0000426299614532E7
+Standard deviation: 0.28867734127767536
+Execution time: 63.151 ms
