@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class CSSTask2 {
-    static final long STUDENT_ID = 12345678L; // replace with your Student ID
+    static final long STUDENT_ID = 230103367; 
     static final int N = 20_000_000;
     static double[] arr = new double[N];
 
@@ -47,7 +47,7 @@ public class CSSTask2 {
         int[] counts = {1, 2, 4, max, max * 2};
         final double P = 0.95;
 
-        parallelSum(max); // warm-up
+        parallelSum(max); 
         double t1 = timeMs(1);
 
         System.out.println("-------------------------------------------------------");
