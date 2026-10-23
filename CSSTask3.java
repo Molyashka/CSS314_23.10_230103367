@@ -1,6 +1,6 @@
 public class CSSTask3 {
     static final int INCREMENTS = 50_000_000;
-    static final int PAD = 16; // 16 longs = 128 bytes between elements
+    static final int PAD = 16; 
 
     static volatile long[] shared;
     static volatile long[] padded;
@@ -16,10 +16,9 @@ public class CSSTask3 {
 
     public static void main(String[] args) throws Exception {
         int logical = Runtime.getRuntime().availableProcessors();
-        int n = Math.max(2, logical / 2); // approx physical core count (assumes 2-way SMT)
+        int n = Math.max(2, logical / 2);
         System.out.println("Logical cores: " + logical + " | Threads used (physical): " + n);
 
-        // Unpadded shared: adjacent elements share a cache line
         shared = new long[n];
         Runnable[] unpadded = new Runnable[n];
         for (int i = 0; i < n; i++) {
@@ -30,7 +29,6 @@ public class CSSTask3 {
             };
         }
 
-        // Padded: elements separated by 128 bytes
         padded = new long[n * PAD];
         Runnable[] pad = new Runnable[n];
         for (int i = 0; i < n; i++) {
@@ -41,7 +39,6 @@ public class CSSTask3 {
             };
         }
 
-        // Local variable, single write at the end
         long[] localOut = new long[n];
         Runnable[] local = new Runnable[n];
         for (int i = 0; i < n; i++) {
@@ -53,7 +50,7 @@ public class CSSTask3 {
             };
         }
 
-        run(unpadded); run(pad); // warm-up
+        run(unpadded); run(pad); 
         shared = new long[n];
         padded = new long[n * PAD];
 
