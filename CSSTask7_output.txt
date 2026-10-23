@@ -1,0 +1,10 @@
+java CSSTask7
+Kernel A (Memory-Bound): B[i] = A[i]
+Cores: 1 | Time: 13.865 ms | Speedup: 1.00 | Efficiency: 1.00
+Cores: 2 | Time: 8.607 ms | Speedup: 1.61 | Efficiency: 0.81
+Cores: 8 | Time: 8.460 ms | Speedup: 1.64 | Efficiency: 0.20
+Kernel B (Compute-Bound): sin(A[i])*cos(A[i])+tan(A[i])
+Cores: 1 | Time: 653.931 ms | Speedup: 1.00 | Efficiency: 1.00
+Cores: 2 | Time: 333.838 ms | Speedup: 1.96 | Efficiency: 0.98
+Cores: 8 | Time: 112.926 ms | Speedup: 5.79 | Efficiency: 0.72
+Kernel A (vector copy) stalled in scaling due to memory channel saturation.v
